@@ -174,16 +174,46 @@ h6, .h6 {
 
 
 
+
 /*
 Header
 */
+.header-container-text{
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  text-align: center;
+  color: #ffffff;
+
+}
+
+.header-overlay{
+  background: rgba(0, 0, 0, .6);
+}
+
+.cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.owl-carousel .owl-slide {
+  position: relative;
+  height: 100vh;
+}
 
 
 
-    #owl-demo .item img{
-        display: block;
-        width: 100%;
-        height: auto;
-    }
 
 
+/*Custom button */
+.custom-btn{
+  color: #fff;
+ background-color: #194121;
+ border-color: 194121;
+ }
+
+ .custom-btn:hover {
+  background-color: #0f2714;
+  color: white;
+}

@@ -2,13 +2,13 @@
 
 	<div class="row">
 		<div class="col-sm-12">
-			<h1>this is page-offers.php</h1>
+			<h1>this is archive-offers.php</h1>
 
 			<?php
 $args =  array(
 	'post_type' => 'Offers',
 	'orderby' => 'price',
-	'order' => 'DESC'
+	'order' => 'ASC'
 );
 	$custom_query = new WP_Query( $args );
 						while ($custom_query->have_posts()) : $custom_query->the_post(); ?>

@@ -1,7 +1,8 @@
+
 <?php get_header(); ?>
+<h1>This is home.php</h1>
 	<div class="row">
 		<div class="col-sm-8 blog-main">
-			<h1>this is index.php</h1>
 
 			<?php
 			if ( have_posts() ) : while ( have_posts() ) : the_post();

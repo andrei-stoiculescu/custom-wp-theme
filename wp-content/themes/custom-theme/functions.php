@@ -29,13 +29,7 @@ add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
 
 
-
-
-
-
-
-
-// Custom Post Type
+// Add custom post type for offers
 function create_custom_post() {
 	register_post_type( 'offers',
 			array(
@@ -60,6 +54,63 @@ add_action( 'init', 'create_custom_post' );
 
 
 
+
+
+
+
+
+
+
+
+//Add custom metabox
+function add_custom_metabox(){
+	add_meta_box( 
+		'custom-metabox',
+        'Custom fields',
+        'custom_metabox_callback',
+        'offers',
+        'normal'
+    );
+}
+ 
+
+
+
+add_action('add_meta_boxes', 'add_custom_metabox');
+ 
+ //Show custom meta boxes in editor
+function custom_metabox_callback(){
+     
+    global $post;
+     
+    ?>
+ 
+    <div class="row">
+        <div class="label">Price</div>
+        <div class="fields">
+            <input type="text" name="_price" value="<?php echo get_post_meta($post->ID, 'price', true)?>"/>
+        </div>
+    </div>
+ 
+    <?php
+}
+ 
+
+
+
+//Save custom meta box content
+function save_custom_metabox(){
+ 
+    global $post;
+ 
+    if(isset($_POST["_price"])):
+         
+        update_post_meta($post->ID, 'price', $_POST["_price"]);
+     
+    endif;
+}
+ 
+add_action('save_post', 'save_custom_metabox');
 
 
 

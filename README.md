@@ -1,5 +1,6 @@
 Version 0.1 changelog
 - Added navbar
+- Created js/scrips.js
 
 ---
 

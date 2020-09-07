@@ -10,6 +10,7 @@ function customtheme_scripts() {
 	wp_enqueue_style( 'owlcarousel default theme css', get_template_directory_uri() . '/owlcarousel/assets/owl.theme.default.min.css', array(), '2.3.4' );
 	wp_enqueue_script( 'owlcarousel js', get_template_directory_uri() . '/owlcarousel/owl.carousel.min.js', array(), '', true );
 	wp_enqueue_script( 'custom owlcarousel header', get_template_directory_uri() . '/owlcarousel/header.js', array(), '', true );
+	wp_enqueue_script( 'scripts js', get_template_directory_uri() . '/js/scripts.js', array(), '', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'customtheme_scripts' );

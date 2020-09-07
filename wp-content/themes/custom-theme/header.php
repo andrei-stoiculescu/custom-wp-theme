@@ -18,39 +18,72 @@
 
   <body>
 
-    <div class="blog-masthead">
-  <div class="container">
-    <nav class="blog-nav">
-      <a class="blog-nav-item active" href="#">Home</a>
-      <?php wp_list_pages( '&title_li=' ); ?>
-    </nav>
-  </div>
+ <header id="home" class="welcome-area">
+  <div class="header-top-area">
+    <div class="container"> 
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="logo">
+            <span>
+              <a href="<?php echo home_url(); ?>">Triptailor</a>
+            </span>
+          </div>
+           
+        </div> <!-- col-sm-3 logo -->
+        
+        <div class="col-sm-8 d-none d-sm-block">
+          <div class="navbar-links">
+            <ul>
+              <li><a href="#">Tours</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div><!-- col-sm-8 links -->
+      </div> <!-- row -->
+    </div><!-- container -->
+
+
+
+<div class="mobile-menu-button d-block d-sm-none">
+<span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+                        <!-- MOBILE NAVIGATION MENU START-->
+    <div id="mobile-menu-button" class="mobile-menu-overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="mobile-menu-overlay-content">
+            <a href="index.html">Tours</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    
+
+<!-- MOBILE NAVIGATION MENU END-->
+
+
 </div>
 
-<!-- HEADER PT HOMEPAGE
-<div class="header-container-text header-overlay h-100">
-  <div class="d-flex align-items-center flex-column justify-content-center h-100 p-4">
-    <h1 class="display-4">Discover Romania</h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-    <button type="button" class="btn custom-btn">Book now</button>
-  </div>
-</div>
+</div> <!-- end top area -->
 
 
-<div id="owl-header" class="owl-carousel owl-theme">
-  <div class="owl-slide cover" style="background-image: url(https://emerging-europe.com/wp-content/uploads/2019/03/bigstock-gorgeous-spring-countryside-la-280866130-990x556.jpg);"></div>
-  <div class="owl-slide cover" style="background-image: url(https://booksandbao.com/wp-content/uploads/2020/01/majkl-velner-nKY59_d9FlA-unsplash-1600x1067.jpg);"></div>
-  <div class="owl-slide cover" style="background-image: url(https://cdn.kimkim.com/files/a/content_articles/featured_photos/32efe52768060fa172de0f052d3527f53cdfb58a/big-0c5409996c6e87912a9401bb9695d679.jpg);"></div>
-</div>
--->
+<script type="text/javascript">
+    
+
+</script>
 
 
+<script type="text/javascript">
+          $(document).on('click', '.navbar-collapse.in', function (e) {
+            if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+                $(this).collapse('hide');
+            }
+        });
+        $('body').scrollspy({
+            target: '.navbar-collapse',
+            offset: 195
+        });
 
-
-
-
-
-
+</script>
 
 
 
@@ -59,19 +92,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--
     <div class="container">
 
       <div class="blog-header">
@@ -82,3 +103,5 @@
         </h1>
         <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
       </div>
+
+      -->

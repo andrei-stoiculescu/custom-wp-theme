@@ -1,6 +1,7 @@
-v 0.1 Changelog
+Version 0.1 changelog
 - Added navbar
 
+---
 
 Added custom post type and finished the backend structure
 

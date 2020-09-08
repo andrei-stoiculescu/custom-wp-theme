@@ -22,21 +22,23 @@
   <div class="header-top-area">
     <div class="container"> 
       <div class="row">
+        
         <div class="col-sm-3">
           <div class="logo">
             <span>
-              <a href="<?php echo home_url(); ?>">Triptailor</a>
+              <a class="logo" href="<?php echo home_url(); ?>">TRIPTAILOR</a>
             </span>
           </div>
-           
-        </div> <!-- col-sm-3 logo -->
+        </div>
         
-        <div class="col-sm-8 d-none d-sm-block">
+        <div class="col-sm-8 d-none d-md-block">
           <div class="navbar-links">
             <ul>
-              <li><a href="#">Tours</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li class="grow"><a href="#">Tours</a></li>
+              <li class="grow"><a href="#">About</a></li>
+              <li class="grow"><a href="#">Blog</a></li>
+              <li class="grow"><a href="#">Romania</a></li>
+              <li class="grow"><a href="#">Contact</a></li>
             </ul>
           </div>
         </div><!-- col-sm-8 links -->
@@ -45,7 +47,7 @@
 
 
 
-<div class="mobile-menu-button d-block d-sm-none">
+<div class="mobile-menu-button d-block d-md-none">
 <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
                         <!-- MOBILE NAVIGATION MENU START-->
     <div id="mobile-menu-button" class="mobile-menu-overlay">
@@ -53,6 +55,8 @@
         <div class="mobile-menu-overlay-content">
             <a href="index.html">Tours</a>
             <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Romania</a>
             <a href="#">Contact</a>
         </div>
     </div>

@@ -3,7 +3,7 @@
 
 <div class="header-container-text header-overlay h-100">
   <div class="d-flex align-items-center flex-column justify-content-center h-100 p-4">
-    <h1 class="display-4">Discover Romania</h1>
+    <h1 class="display-4 bold">Discover Romania</h1>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
     <button type="button" class="btn custom-btn">Book now</button>
   </div>

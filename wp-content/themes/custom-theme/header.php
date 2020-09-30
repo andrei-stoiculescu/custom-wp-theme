@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!--    <meta name="description" content="">
     <meta name="author" content="">
 -->
@@ -18,8 +19,9 @@
 
   <body>
 
- <header id="home" class="welcome-area">
+<header id="home" class="welcome-area">
   <div class="header-top-area">
+    
     <div class="container"> 
       <div class="row">
         
@@ -46,54 +48,23 @@
     </div><!-- container -->
 
 
-
-<div class="mobile-menu-button d-block d-md-none">
-<span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
-                        <!-- MOBILE NAVIGATION MENU START-->
-    <div id="mobile-menu-button" class="mobile-menu-overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="mobile-menu-overlay-content">
-            <a href="index.html">Tours</a>
-            <a href="#">About</a>
-            <a href="#">Blog</a>
-            <a href="#">Romania</a>
-            <a href="#">Contact</a>
-        </div>
+    <div class="mobile-menu-button d-block d-md-none">
+      <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+        <div id="mobile-menu-button" class="mobile-menu-overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="mobile-menu-overlay-content">
+              <a href="index.html">Tours</a>
+              <a href="#">About</a>
+              <a href="#">Blog</a>
+              <a href="#">Romania</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
     </div>
-    
-
-<!-- MOBILE NAVIGATION MENU END-->
-
-
-</div>
 
 </div> <!-- end top area -->
 
-
-<script type="text/javascript">
-    
-
-</script>
-
-
-<script type="text/javascript">
-          $(document).on('click', '.navbar-collapse.in', function (e) {
-            if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
-                $(this).collapse('hide');
-            }
-        });
-        $('body').scrollspy({
-            target: '.navbar-collapse',
-            offset: 195
-        });
-
-</script>
-
-
-
-
-
-
+</header>
 
 
 <!--

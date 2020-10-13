@@ -9,7 +9,6 @@ Author URI: s491671.ml
 /*
  * Globals
  */
-
 body {
 font-family: 'Open Sans', sans-serif;
 font-weight: 300;
@@ -31,6 +30,18 @@ h6, .h6 {
 
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #194121;
+  background: yellow;
+}
+
+::selection {
+  color: #194121;
+  background: yellow;
+}
+
+
+
 .section-title h2{
   padding-bottom: 30px;
   font-family: 'Archivo', sans-serif;
@@ -50,132 +61,6 @@ h6, .h6 {
     width: 970px;
   }
 }
-
-
-/*
- * Masthead for nav
-
-
-.blog-masthead {
-  background-color: #428bca;
-  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
-          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
-}
- */
-
-/* Active state gets a caret at the bottom 
-.blog-nav .active {
-  color: #fff;
-}
-.blog-nav .active:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -5px;
-  vertical-align: middle;
-  content: " ";
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid;
-  border-left: 5px solid transparent;
-}
-*/
-
-/*
- * Blog name and description
-
-.blog-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.blog-title {
-  margin-top: 30px;
-  margin-bottom: 0;
-  font-size: 60px;
-  font-weight: normal;
-}
-.blog-description {
-  font-size: 20px;
-  color: #999;
-}
- */
-
-
-/*
- * Main column and sidebar layout
-
-
-.blog-main {
-  font-size: 18px;
-  line-height: 1.5;
-}
- */
-
-/* Sidebar modules for boxing content 
-.sidebar-module {
-  padding: 15px;
-  margin: 0 -15px 15px;
-}
-.sidebar-module-inset {
-  padding: 15px;
-  background-color: #f5f5f5;
-  border-radius: 4px;
-}
-.sidebar-module-inset p:last-child,
-.sidebar-module-inset ul:last-child,
-.sidebar-module-inset ol:last-child {
-  margin-bottom: 0;
-}
-*/
-
-/* Pagination 
-.pager {
-  margin-bottom: 60px;
-  text-align: left;
-}
-.pager > li > a {
-  width: 140px;
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 30px;
-}
-*/
-
-/*
- * Blog posts
-
-
-.blog-post {
-  margin-bottom: 60px;
-}
-.blog-post-title {
-  margin-bottom: 5px;
-  font-size: 40px;
-}
-.blog-post-meta {
-  margin-bottom: 20px;
-  color: #999;
-}
- */
-
-/*
- * Footer
- */
-
-.blog-footer {
-  padding: 40px 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: 1px solid #e5e5e5;
-}
-.blog-footer p:last-child {
-  margin-bottom: 0;
-}
-
-
-
 
 /*
 Homepage header
@@ -234,14 +119,22 @@ Header for other pages
 
 /*Custom button */
 .custom-btn{
-  color: #fff;
-  background-color: #194121;
-  border-color: 194121;
+  font-size: 14px !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  padding: 12px 30px !important;
+  color: #fff !important;
+  background-color: #194121 !important;
+  border-color: #194121 !important;
+  border-radius: 50px 50px 50px 50px !important;
+
  }
 
  .custom-btn:hover {
-  background-color: #0f2714;
-  color: #fff;
+  color: #fff !important;
+  background-color: transparent !important;
+  border: 1px solid #194121 !important;
+  
 }
 
 
@@ -332,7 +225,6 @@ Header for other pages
 .menu-bg {
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    
     box-shadow: 0 2px 10px -1px rgba(87, 97, 100, 0.35);
     background: #212121;
     border: none;
@@ -367,8 +259,7 @@ Header for other pages
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 1);
+  background-color: #212121;
   overflow-x: hidden;
   transition: 0.2s;
 }
@@ -385,7 +276,7 @@ Header for other pages
   padding: 8px;
   text-decoration: none !important;
   font-size: 36px;
-  color: #818181;
+  color: #FFFFFF;
   display: block;
   transition: 0.3s;
 }
@@ -429,7 +320,6 @@ Featured tours area
 .featured-tours h4{
   font-family: 'Archivo', sans-serif;
   font-size: 18px;
-  
   font-weight: 600;
 }
 
@@ -454,6 +344,7 @@ font-weight: 300;
     padding: 150px 0px;
     position: relative;
     z-index: 1;
+    margin-top: 30px;
 }
 
 .call-to-area-2 {
@@ -462,6 +353,7 @@ font-weight: 300;
     padding: 150px 0px;
     position: relative;
     z-index: 1;
+    margin-top: 30px;
 }
 
 .call-to-area:after {
@@ -528,12 +420,39 @@ font-weight: 300;
 
 
 
+
+
+
+/*
+ * Testimonials area
+ */
+.testimonials{
+  padding-top: 30px;
+  background: #F0F0F0;
+
+}
+
+.testimonials h4{
+  font-family: 'Archivo', sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.testimonials p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+
+}
+
+
 /*
  * Contact area
  */
 .contact-area{
   padding-top: 30px;
-  background: #F7F7F7;
+  padding-bottom: 30px;
+  background: #F0F0F0;
 
 }
 
@@ -560,11 +479,104 @@ font-weight: 300;
 
 
 
+
+
+
+
 /*
-homepage offers
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! OFFER PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
-.element-item{
-  width: 700px;
+
+.offer-header:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.offer-title{
+  padding-top: 15em;
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+
+}
+
+.offer-title h1{
+  font-family: 'Archivo', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.offer-subtitle h2{
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 0px;
+  z-index: 2;
+}
+
+.offer-details{
+  background: #F0F0F0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.offer-section-title h2{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Archivo', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+
+}
+
+/*Offer custom button */
+.offer-custom-btn{
+  margin-top: 15px;
+  font-size: 14px !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  padding: 6px 12px !important;
+  color: #fff !important;
+  background-color: #194121 !important;
+  border-color: #194121 !important;
+  border-radius: 25px 25px 25px 25px !important;
+
+ }
+
+ .offer-custom-btn:hover {
+  color: #194121 !important;
+  background-color: transparent !important;
+  border: 1px solid #194121 !important;
+  
+}
+
+.nav-tabs {
+  background-color: #F0F0F0 !important;
+}
+
+.nav-tabs > li > a {
+  color:#212529;
+}
+
+.nav-pills > li > a:hover {
+  background-color: #194121!important;
+  color: #ffffff !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #F0F0F0!important;
+    border-radius: 0px 0px 0px !important; 
+    border-bottom: 2px solid #194121 !important;
+    color:#212529 !important;
 }
 
 
@@ -572,6 +584,95 @@ homepage offers
 
 
 
+
+
+
+.newsletter-area {
+    background: #F0F0F0;
+    padding: 40px 0px; 
+    }
+
+.newsletter-area h2 {
+    color: #212529;
+    
+    }
+
+.newsletter-area p {
+    color: #212529;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    }
+
+.newsletter-subscribe-btn{
+  font-size: 14px !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  padding: 6px 12px !important;
+  color: #fff !important;
+  background-color: #194121 !important;
+  border-color: #194121 !important;
+  border-radius: 25px 25px 25px 25px !important;
+
+ }
+
+.newsletter-subscribe-btn:hover {
+  color: #194121 !important;
+  background-color: transparent !important;
+  border: 1px solid #194121 !important;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*Footer
+*/
+
+.footer{
+  background-color: #FFFFFF;
+
+  
+}
+
+.footer-links p, a {
+  font-family: 'Open Sans', sans-serif;
+  
+  
+}
+
+.footer-links a:hover{
+  text-decoration: none;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  margin: 0 5px 0 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram{
+  background: #F0F0F0;
+  color: #212529;
+}
 
 
 
@@ -588,3 +689,4 @@ transition: all .2s ease-in-out;
 transform: scale(1.1);
 
 }
+

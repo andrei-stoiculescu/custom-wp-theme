@@ -29,18 +29,18 @@ function closeNav() {
 
 
 
-//owl carousel test
+//owl carousel featured tours
 $(document).ready(function($) {
 
 	var owl = $("#owl-featured-tours");
   owl.owlCarousel({
   	slideSpeed : 200,
     paginationSpeed : 800,
-    nav:false,
-    pagination :true,
+    nav: false,
+    pagination: true,
     autoplay: true,
 	autoplayTimeout: 4000,
-    loop : true,
+    loop: true,
     responsive:{
 		0:{
 			items:1
@@ -60,6 +60,39 @@ $(document).ready(function($) {
 	}
 	
   });
-  
+
+});
+
+//owl carousel testimonials
+$(document).ready(function($) {
+
+	var owl = $("#owl-testimonials");
+  owl.owlCarousel({
+  	slideSpeed : 200,
+    paginationSpeed : 800,
+    nav: false,
+    pagination: true,
+    autoplay: true,
+	autoplayTimeout: 4000,
+    loop: true,
+    responsive:{
+		0:{
+			items:1
+		},
+		576:{
+			items:2
+		},
+		768:{
+			items:2
+		},
+		992:{
+			items:3
+		},
+		1200:{
+			items:3
+		}
+	}
 	
+  });
+
 });

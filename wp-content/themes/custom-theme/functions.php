@@ -52,7 +52,25 @@ function create_custom_post() {
 add_action( 'init', 'create_custom_post' );
 
 
-
+// Add custom post type for testimonials
+function create_testimonials() {
+	register_post_type( 'testimonials',
+			array(
+			'labels' => array(
+	'name' => __( 'Testimonials' ),
+	'singular_name' => __( 'testimonial' ),
+			),
+			'public' => true,
+			'has_archive' => true,
+			'supports' => array(
+	'title',
+	'editor',
+	'thumbnail',
+//	'custom-fields'
+			)
+	));
+}
+add_action( 'init', 'create_testimonials' );
 
 
 

@@ -96,3 +96,36 @@ $(document).ready(function($) {
   });
 
 });
+
+
+//owl carousel highlights
+$(document).ready(function() {
+  $("#owl-highlights").owlCarousel({
+    slideSpeed : 200,
+    paginationSpeed : 800,
+    nav: false,
+    pagination: true,
+    autoplay: false,
+	autoplayTimeout: 4000,
+    loop: true,
+    responsive:{
+		0:{
+			items:2
+		},
+		576:{
+			items:2
+		},
+		768:{
+			items:3
+		},
+		992:{
+			items:4
+		},
+		1200:{
+			items:4
+		}
+	}
+ 
+  });
+ 
+});

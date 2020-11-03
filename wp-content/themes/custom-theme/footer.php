@@ -5,8 +5,8 @@
   <section class="footer">
     <div class="pt-5 pb-5">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 footer-links">
+            <div class="row footer-links">
+                <div class="col-xs-12 col-sm-6 ">
                     <a href="#">
                         <svg class="d-block mb-4" width="36" height="36" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false">
                             <title>Bootstrap</title>
@@ -18,7 +18,7 @@
                   1600 Amphitheatre Parkway<br>
                   Mountain View, CA 94043
                 </address>
-                    <ul class="list-unstyled list-light">
+                    <ul class="list-unstyled list-light footer-links">
                         <li><a href="#">Disclaimer</a></li>
                     </ul>
                 </div>
@@ -48,32 +48,31 @@
                         <div class="input-group mb-3">
                             <input type="text" class="form-control form-control-sm" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-primary btn-sm form-control-sm" type="button">OK</button>
+                                <button class="btn btn-secondary btn-sm form-control-sm" type="button">OK</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
             <hr>
-            <div class="row f-flex justify-content-between" style="justify-content: space-between;">
+            <div class="row f-flex justify-content-between social-links" style="justify-content: space-between;">
                 <div class="col-md-8 text-xs-center  text-left   my-1">
-                    <p class="mt-2  text-muted"> © Copyright 2020 • TRIPTAILOR DMC</p>
+                    <p class="mt-2 text-muted"> © Copyright 2020 • TRIPTAILOR DMC</p>
                 </div>
-                <div class="col-md-4 text-xs-center   text-lg-right   my-1">
+                <div class="col-md-4 text-xs-center text-lg-right my-1">
                     <div class="btn-container  mt-1 text-md-right text-sm-center">
                         <div class="d-inline-block">
-                            <a href="https://facebook.com/AgentiaTriptailor" class="fa fa-facebook fa-lg"></a>
-                            <a href="#" role="button" class="fa fa-instagram"></a>
-                            <a href="#" role="button" class="fa fa-twitter "></a>
-                            <a href="#" role="button" class="fa fa-linkedin "></a>
+                            <a href="https://facebook.com/AgentiaTriptailor" class="fa fa-facebook fa-lg text-muted"></a>
+                            <a href="#" role="button" class="fa fa-instagram fa-lg text-muted"></a>
+                            <a href="#" role="button" class="fa fa-twitter fa-lg text-muted"></a>
+                            <a href="#" role="button" class="fa fa-linkedin fa-lg text-muted"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
-
+    </div>
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

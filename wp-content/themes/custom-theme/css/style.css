@@ -1,7 +1,7 @@
 /*
 Theme Name: Custom theme 
 Theme URI: 
-Version: 0.0.1
+Version: 0.1
 Author: Andrei Stoiculescu
 Author URI: s491671.ml
 */
@@ -83,12 +83,14 @@ Homepage header
 
 .header-overlay{
   background: rgba(0, 0, 0, .6);
+  height: 100vh;
 }
 
 .cover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
 }
 
 .owl-carousel .owl-slide {
@@ -181,14 +183,14 @@ Header for other pages
 }
 
 .navbar-links a{
-    color: #fff;
+    color: #FFFFFF;
     font-size: 16px;
     font-weight: 500;
 }
 
 .navbar-links a:hover{
   text-decoration: none;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 
@@ -512,7 +514,7 @@ font-weight: 300;
   font-weight: 600;
 }
 
-.offer-subtitle h2{
+.offer-subtitle h2 {
   font-family: 'Archivo', sans-serif;
   font-weight: 600;
   text-align: center;
@@ -529,7 +531,8 @@ font-weight: 300;
 
 }
 
-.offer-section-title h2{
+
+.offer-section-title h2 {
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: 'Archivo', sans-serif;
@@ -537,6 +540,31 @@ font-weight: 300;
   font-weight: 600;
 
 }
+
+
+/* Share buttons */
+
+.share-buttons {
+  border-top: 1px solid rgba(0,0,0,.1);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.share-buttons p {
+  display: inline;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.share-buttons a {
+  color: #212529 !important;
+}
+
+.share-buttons a:hover {
+  color: ;
+  text-decoration: none;
+}
+
 
 /*Offer custom button */
 .offer-custom-btn{
@@ -558,6 +586,9 @@ font-weight: 300;
   border: 1px solid #194121 !important;
   
 }
+
+
+/*Inclusions tabs */
 
 .nav-tabs {
   background-color: #F0F0F0 !important;
@@ -583,10 +614,44 @@ font-weight: 300;
 
 
 
+/*Highligts area*/
+.highlights-area {
+    
+    }
+
+#owl-highlights .item{
+  margin: 5px;
+}
+
+#owl-highlights .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+
+}
+
+
+
+.highlight-title{
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  left: 10px;
+}
+
+.highlight-title p{
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
 
 
 
+
+
+/*Subscribe to newsletter tabs */
 .newsletter-area {
     background: #F0F0F0;
     padding: 40px 0px; 
@@ -632,6 +697,16 @@ font-weight: 300;
 
 
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Offers archive page !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
+.offers-area{
+  padding-top: 50px;
+}
+
+
+
+
+
 
 
 
@@ -645,14 +720,23 @@ font-weight: 300;
   
 }
 
-.footer-links p, a {
+.footer-links a {
   font-family: 'Open Sans', sans-serif;
-  
-  
+  text-decoration: none;
+  color: #212529;
 }
 
-.footer-links a:hover{
+
+.footer-links a:hover, 
+.social-links a:hover {
   text-decoration: none;
+  color: #212529;
+  opacity: 0.8;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #212529;
 }
 
 /* Style all font awesome icons */
@@ -666,7 +750,8 @@ font-weight: 300;
 
 /* Add a hover effect if you want */
 .fa:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+
 }
 
 .fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram{

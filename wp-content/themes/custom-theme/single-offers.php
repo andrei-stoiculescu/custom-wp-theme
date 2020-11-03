@@ -51,6 +51,18 @@
 
 
 </div>
+
+
+<div class="share-buttons text-center">
+<p>Share</p>
+<a class="fa fa-facebook" href="http://www.facebook.com/sharer.php?u=<?php echo get_permalink(get_the_ID());?>" target="_blank"></a>
+  <a class="fa fa-twitter" href="https://twitter.com/share?url=<?php echo get_permalink(get_the_ID());?>&amp;text=See%20this%20offer%20on&amp;hashtags=triptailor" target="_blank"></a>
+   <a class="fa fa-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo get_permalink(get_the_ID());?>" target="_blank"></a>
+<a class="fa fa-whatsapp" href="whatsapp://send?text=<?php echo get_permalink(get_the_ID());?>" data-action="share/whatsapp/share"></a>
+
+   
+</div>
+
 </div>
 </section>
 <?php get_header(); ?>
@@ -228,10 +240,73 @@
 
 
 
+
+
+
+
+<section class="highlights-area">
+    <div class="container">
+        <div class="offer-section-title text-center">
+            <h2>Highlights of Romania</h2>
+        </div>
+        <div class="row">
+            <div id="owl-highlights" class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="https://i.imgur.com/SRbD3ya.jpg" alt="Owl Image">
+                    <div class="highlight-title">
+                        <p>Palace of Parliament, Bucharest</p>
+                    </div>
+                </div>
+    
+               <div class="item">
+                    <img src="https://i.imgur.com/SRbD3ya.jpg" alt="Owl Image">
+                    <div class="highlight-title">
+                        <p>Bran Castle, Bran</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://i.imgur.com/SRbD3ya.jpg" alt="Owl Image">
+                    <div class="highlight-title">
+                        <p>Painted Monasteries of Bucovina</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://i.imgur.com/SRbD3ya.jpg" alt="Owl Image">
+                    <div class="highlight-title">
+                        <p>Wooden Churches of Maramures</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://i.imgur.com/SRbD3ya.jpg" alt="Owl Image">
+                    <div class="highlight-title">
+                        <p>Cluj Napoca</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://i.imgur.com/SRbD3ya.jpg" alt="Owl Image">
+                    <div class="highlight-title">
+                        <p>Saxon villages and fortified churches</p>
+                    </div>
+                </div>
+                 <div class="item">
+                    <img src="https://i.imgur.com/SRbD3ya.jpg" alt="Owl Image">
+                    <div class="highlight-title">
+                        <p>Driving the Transfagarasan road</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
 	
 	<section class="featured-tours">
 	<div class="container">
-		<div class="offer-section-title text-center" style="    border-top: 1px solid rgba(0,0,0,.1);">
+		<div class="offer-section-title text-center" style="border-top: 1px solid rgba(0,0,0,.1);">
 			<h2>Other tours</h2>
 		</div>
 	</div>

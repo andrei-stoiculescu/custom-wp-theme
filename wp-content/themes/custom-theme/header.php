@@ -36,7 +36,7 @@
         <div class="col-sm-8 d-none d-md-block">
           <div class="navbar-links">
             <ul>
-              <li class="grow"><a href="#">Tours</a></li>
+              <li class="grow"><a href="<?php echo site_url(); ?>/offers/">Tours</a></li>
               <li class="grow"><a href="#">About</a></li>
               <li class="grow"><a href="#">Blog</a></li>
               <li class="grow"><a href="#">Romania</a></li>
@@ -53,7 +53,7 @@
         <div id="mobile-menu-button" class="mobile-menu-overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="mobile-menu-overlay-content">
-              <a href="index.html">Tours</a>
+              <a href="<?php echo site_url(); ?>/offers/">Tours</a>
               <a href="#">About</a>
               <a href="#">Blog</a>
               <a href="#">Romania</a>

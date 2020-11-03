@@ -1,3 +1,8 @@
+Version 0.2 changelog
+- General design finished
+
+---
+
 Version 0.1 changelog
 - Added navbar
 - Created js/scrips.js

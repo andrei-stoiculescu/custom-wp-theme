@@ -1,4 +1,5 @@
 Version 0.2 changelog
+- Added custom metaboxes for itineraries
 - General design finished
 
 ---

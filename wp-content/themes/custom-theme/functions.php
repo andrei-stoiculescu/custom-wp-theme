@@ -82,6 +82,91 @@ add_action( 'init', 'create_testimonials' );
 
 
 
+
+
+
+
+
+
+
+add_action( 'cmb2_admin_init', 'cmb2_sample_metaboxes' );
+/**
+ * Define the metabox and field configurations.
+ */
+function cmb2_sample_metaboxes() {
+
+	/**
+	 * Initiate the metabox
+	 */
+	$cmb = new_cmb2_box( array(
+		'id'            => 'itinerary_metabox',
+		'title'         => __( 'Itinerary', 'cmb2' ),
+		'object_types'  => array( 'offers' ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+		'cmb_styles' => false, // false to disable the CMB stylesheet
+		// 'closed'     => true, // Keep the metabox closed by default
+	) );
+
+	// Regular text field
+	$cmb->add_field( array(
+		'name'       => __( 'Daily itinerary', 'cmb2' ),
+		//'desc'       => __( 'field description (optional)', 'cmb2' ),
+		'id'         => '_itinerary_text',
+		'type'       => 'textarea',
+		'show_on_cb' => 'cmb2_hide_if_no_cats', // function should return a bool value
+		// 'sanitization_cb' => 'my_custom_sanitization', // custom sanitization callback parameter
+		// 'escape_cb'       => 'my_custom_escaping',  // custom escaping callback parameter
+		// 'on_front'        => false, // Optionally designate a field to wp-admin only
+		'repeatable'      => true
+	) );
+
+
+
+$cmb = new_cmb2_box( array(
+		'id'            => 'tour_date_metabox',
+		'title'         => __( 'Date', 'cmb2' ),
+		'object_types'  => array( 'offers' ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'default',
+		'show_names'    => true, // Show field names on the left
+		'cmb_styles' => false, // false to disable the CMB stylesheet
+		// 'closed'     => true, // Keep the metabox closed by default
+	) )
+;
+$cmb->add_field( array(
+    'name' => 'Tour start date',
+    'id'   => '_tour_dates',
+    'type' => 'text_date',
+    // 'timezone_meta_key' => 'wiki_test_timezone',
+    'date_format' => 'd-m-Y',
+    'cmb_styles' => true, // false to disable the CMB stylesheet
+) );
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Add custom metabox
 function add_custom_metabox(){
 	add_meta_box( 

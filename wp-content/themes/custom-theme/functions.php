@@ -150,6 +150,76 @@ $cmb->add_field( array(
 
 
 
+
+$cmb = new_cmb2_box( array(
+		'id'            => 'included_metabox',
+		'title'         => __( 'Included', 'cmb2' ),
+		'object_types'  => array( 'offers' ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'default',
+		'show_names'    => false, // Show field names on the left
+		'cmb_styles' => false, // false to disable the CMB stylesheet
+		// 'closed'     => true, // Keep the metabox closed by default
+	) );
+
+	// Regular text field
+	$cmb->add_field( array(
+		'name'       => __( 'Included', 'cmb2' ),
+		//'desc'       => __( 'field description (optional)', 'cmb2' ),
+		'id'         => '_included_text',
+		'type'       => 'textarea',
+		'show_on_cb' => 'cmb2_hide_if_no_cats', // function should return a bool value
+		// 'sanitization_cb' => 'my_custom_sanitization', // custom sanitization callback parameter
+		// 'escape_cb'       => 'my_custom_escaping',  // custom escaping callback parameter
+		// 'on_front'        => false, // Optionally designate a field to wp-admin only
+		//'repeatable'      => false
+	) );
+
+
+$cmb = new_cmb2_box( array(
+		'id'            => 'not_included_metabox',
+		'title'         => __( 'Not included', 'cmb2' ),
+		'object_types'  => array( 'offers' ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'default',
+		'show_names'    => false, // Show field names on the left
+		'cmb_styles' => false, // false to disable the CMB stylesheet
+		// 'closed'     => true, // Keep the metabox closed by default
+	) );
+
+	// Regular text field
+	$cmb->add_field( array(
+		'name'       => __( 'Not included', 'cmb2' ),
+		//'desc'       => __( 'field description (optional)', 'cmb2' ),
+		'id'         => '_not_included_text',
+		'type'       => 'textarea',
+		'show_on_cb' => 'cmb2_hide_if_no_cats', // function should return a bool value
+		// 'sanitization_cb' => 'my_custom_sanitization', // custom sanitization callback parameter
+		// 'escape_cb'       => 'my_custom_escaping',  // custom escaping callback parameter
+		// 'on_front'        => false, // Optionally designate a field to wp-admin only
+		//'repeatable'      => false
+	) );
+
+$cmb = new_cmb2_box( array(
+		'id'            => 'notes_metabox',
+		'title'         => __( 'Notes', 'cmb2' ),
+		'object_types'  => array( 'offers' ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'default',
+		'show_names'    => false, // Show field names on the left
+		'cmb_styles' => false, // false to disable the CMB stylesheet
+		// 'closed'     => true, // Keep the metabox closed by default
+	) );
+
+	// Regular text field
+	$cmb->add_field( array(
+		'name'       => __( 'Notes', 'cmb2' ),
+		'id'         => '_notes_text',
+		'type'       => 'textarea',
+		'show_on_cb' => 'cmb2_hide_if_no_cats'
+	) );
+
+
 }
 
 

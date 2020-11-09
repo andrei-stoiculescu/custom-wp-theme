@@ -150,29 +150,34 @@ foreach($array as $key => $value){
 		<h2>Inclusions</h2>
 	</div>
 	<div class="p-0 bg-white rounded shadow mb-5">
-	    <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center border-0 ">
+	    <ul id="included" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center border-0 ">
 	      <li class="nav-item flex-sm-fill">
-	        <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">Included</a>
+	        <a id="included-tab" data-toggle="tab" href="#included" role="tab" aria-controls="included" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">Included</a>
 	      </li>
 	      <li class="nav-item flex-sm-fill">
-	        <a id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Not included</a>
+	        <a id="not-included-tab" data-toggle="tab" href="#not-included" role="tab" aria-controls="not-included" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Not included</a>
 	      </li>
 	      <li class="nav-item flex-sm-fill">
-	        <a id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Notes</a>
+	        <a id="notes-tab" data-toggle="tab" href="#notes" role="tab" aria-controls="notes" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Notes</a>
 	      </li>
 	    </ul>
 	    <div id="myTabContent" class="tab-content">
-	      <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
-	        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-	          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	      <div id="included" role="tabpanel" aria-labelledby="included-tab" class="tab-pane fade px-4 py-5 show active">
+	        <p class="text-muted">
+                <?php $included = get_post_meta( get_the_ID(), '_included_text', true );
+                echo esc_html( $included );?>
+            </p>
 	      </div>
-	      <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
-	        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-	          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	      <div id="not-included" role="tabpanel" aria-labelledby="not-included-tab" class="tab-pane fade px-4 py-5">
+	        <p class="text-muted">
+                <?php $not_included = get_post_meta( get_the_ID(), '_not_included_text', true );
+                echo esc_html( $not_included );?>  
+            </p>
 	      </div>
-	      <div id="contact" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
-	        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-	          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	      <div id="notes" role="tabpanel" aria-labelledby="notes-tab" class="tab-pane fade px-4 py-5">
+	        <p class="text-muted">
+                <?php $notes = get_post_meta( get_the_ID(), '_notes_text', true );
+                echo esc_html( $notes );?></p>
 	      </div>
 	    </div>
 	  </div>

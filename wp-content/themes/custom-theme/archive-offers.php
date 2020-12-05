@@ -21,7 +21,7 @@
 <section class="offers-area">
 	
 <div class="container">
-  <div class="row justify-content-between">
+  <div class="row justify-content">
     <?php $the_query=new WP_Query( array( 'post_type'=> 'offers' ) ); ?>
     <?php if ( $the_query->have_posts() ) : ?>
     <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>

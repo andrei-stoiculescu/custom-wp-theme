@@ -1,18 +1,43 @@
+<div>
+	<?php
+		$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		echo '<div class="offer-header h-75" style="background: url('. $url.'); background-size: cover; position: relative; z-index: 1;">';
+	?>
+
+	<div class="offer-title">
+    	<h1><?php echo esc_html( get_the_title() ); ?></h1>
+    </div>
+    <div class="offer-subtitle">
+    	<h2>request now</h2>
+    </div>
+		
+
+</div>
+
 <?php get_header(); ?>
 
-	<div class="row">
-		<div class="col-sm-12">
-			<h1>this is page.php</h1>
 
-			<?php
-if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-	get_template_part( 'content', get_post_format() );
+<section class="page-content">
+	
 
-endwhile; endif;
-			?>
+<div class="container">
+	
+		
+<?php
+    // TO SHOW THE PAGE CONTENTS
+    while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
+        <div class="entry-content-page">
+            <?php the_content(); ?> <!-- Page Content -->
+        </div><!-- .entry-content-page -->
 
-		</div> <!-- /.col -->
-	</div> <!-- /.row -->
+    <?php
+    endwhile; //resetting the page loop
+    wp_reset_query(); //resetting the page query
+    ?>
+
+
+</div>
+</section>
 
 <?php get_footer(); ?>

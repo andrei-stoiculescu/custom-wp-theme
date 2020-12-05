@@ -39,8 +39,8 @@
               <li class="grow"><a href="<?php echo site_url(); ?>/offers/">Tours</a></li>
               <li class="grow"><a href="#">About</a></li>
               <li class="grow"><a href="#">Blog</a></li>
-              <li class="grow"><a href="#">Romania</a></li>
-              <li class="grow"><a href="#">Contact</a></li>
+              <li class="grow"><a href="<?php echo site_url(); ?>/romania">Romania</a></li>
+              <li class="grow"><a href="<?php echo site_url(); ?>/contact">Contact</a></li>
             </ul>
           </div>
         </div><!-- col-sm-8 links -->
@@ -56,8 +56,8 @@
               <a href="<?php echo site_url(); ?>/offers/">Tours</a>
               <a href="#">About</a>
               <a href="#">Blog</a>
-              <a href="#">Romania</a>
-              <a href="#">Contact</a>
+              <a href="<?php echo site_url(); ?>/romania">Romania</a>
+              <a href="<?php echo site_url(); ?>/contact">Contact</a>
             </div>
           </div>
     </div>

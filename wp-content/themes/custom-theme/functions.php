@@ -11,6 +11,9 @@ function customtheme_scripts() {
 	wp_enqueue_script( 'owlcarousel js', get_template_directory_uri() . '/owlcarousel/owl.carousel.min.js', array(), '', true );
 	wp_enqueue_script( 'custom owlcarousel header', get_template_directory_uri() . '/owlcarousel/header.js', array(), '', true );
 	wp_enqueue_script( 'scripts js', get_template_directory_uri() . '/js/scripts.js', array(), '', true );
+	//wp_enqueue_script( 'instagramFeed js', get_template_directory_uri() . '/js/instagramFeed.js', array() );
+	wp_enqueue_script( 'instagramFeed jquery', get_template_directory_uri() . '/js/jquery.instagramFeed.js', array( 'jquery' ), false, false );
+	wp_enqueue_script( 'instagramFeed options', get_template_directory_uri() . '/js/instagramFeed-options.js', array( 'jquery' ), false, false );
 
 }
 
@@ -325,8 +328,10 @@ function custom_settings_page() { ?>
 	</div>
 <?php }
 
-
-
+//Custom excerpt length
+add_filter( 'excerpt_length', function($length) {
+    return 25;
+} );
 
 
 

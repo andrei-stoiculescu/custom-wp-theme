@@ -763,6 +763,83 @@ font-weight: 300;
 
 
 
+
+
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Romania page !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.page-content{
+  margin-top: 30px;
+}
+
+.gallery{
+  margin-top: 30px;
+
+
+
+  /*background-color: #212529 !important; 
+  background-color: #101010;*/
+}
+
+.embed-responsive{
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Contact page !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.page-content-contact{
+    background-color: #F0F0F0;
+}
+
+.contact-first-column{
+  padding-top: 2rem;
+  padding-bottom: 30px;
+  color: #212529;
+  /*background-image: url("https://i.imgur.com/UCqKKB4.jpg");*/
+  background-color: #F0F0F0;
+
+
+}
+
+
+
+.contact-second-column{
+padding-top: 30px;
+}
+
+.contact-social{
+
+  color: #212529;
+  
+  margin-left: 0px !important;
+  
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
  * Animations
  */

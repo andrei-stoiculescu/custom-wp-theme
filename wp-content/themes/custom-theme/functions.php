@@ -34,6 +34,7 @@ add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
 
 
+
 // Add custom post type for offers
 function create_custom_post() {
 	register_post_type( 'offers',

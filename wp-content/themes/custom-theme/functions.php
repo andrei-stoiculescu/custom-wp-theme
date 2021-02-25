@@ -1,19 +1,19 @@
 <?php
 // Add scripts and stylesheets
 function customtheme_scripts() {
-	wp_enqueue_style( 'style.css', get_template_directory_uri() . '/css/style.css' );
+	wp_enqueue_style( 'style.css', get_theme_file_uri() . '/css/style.css' );
 	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css', array(), '4.5.0' );
 	wp_enqueue_script( 'jquery slim', 'https://code.jquery.com/jquery-3.5.1.slim.min.js', array(), '3.5.1', true);
 	wp_enqueue_script( 'popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', array(), '1.16.0', true);
 	wp_enqueue_script( 'bootstrap js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js', array( 'jquery'), '4.5.0', true);
-	wp_enqueue_style( 'owlcarousel css', get_template_directory_uri() . '/owlcarousel/assets/owl.carousel.min.css', array(), '2.3.4' );
-	wp_enqueue_style( 'owlcarousel default theme css', get_template_directory_uri() . '/owlcarousel/assets/owl.theme.default.min.css', array(), '2.3.4' );
-	wp_enqueue_script( 'owlcarousel js', get_template_directory_uri() . '/owlcarousel/owl.carousel.min.js', array(), '', true );
-	wp_enqueue_script( 'custom owlcarousel header', get_template_directory_uri() . '/owlcarousel/header.js', array(), '', true );
-	wp_enqueue_script( 'scripts js', get_template_directory_uri() . '/js/scripts.js', array(), '', true );
-	//wp_enqueue_script( 'instagramFeed js', get_template_directory_uri() . '/js/instagramFeed.js', array() );
-	wp_enqueue_script( 'instagramFeed jquery', get_template_directory_uri() . '/js/jquery.instagramFeed.js', array( 'jquery' ), false, false );
-	wp_enqueue_script( 'instagramFeed options', get_template_directory_uri() . '/js/instagramFeed-options.js', array( 'jquery' ), false, false );
+	wp_enqueue_style( 'owlcarousel css', get_theme_file_uri() . '/owlcarousel/assets/owl.carousel.min.css', array(), '2.3.4' );
+	wp_enqueue_style( 'owlcarousel default theme css', get_theme_file_uri() . '/owlcarousel/assets/owl.theme.default.min.css', array(), '2.3.4' );
+	wp_enqueue_script( 'owlcarousel js', get_theme_file_uri() . '/owlcarousel/owl.carousel.min.js', array(), '', true );
+	wp_enqueue_script( 'custom owlcarousel header', get_theme_file_uri() . '/owlcarousel/header.js', array(), '', true );
+	wp_enqueue_script( 'scripts js', get_theme_file_uri() . '/js/scripts.js', array(), '', true );
+	//wp_enqueue_script( 'instagramFeed js', get_theme_file_uri() . '/js/instagramFeed.js', array() );
+	wp_enqueue_script( 'instagramFeed jquery', get_theme_file_uri() . '/js/jquery.instagramFeed.js', array( 'jquery' ), false, false );
+	wp_enqueue_script( 'instagramFeed options', get_theme_file_uri() . '/js/instagramFeed-options.js', array( 'jquery' ), false, false );
 
 }
 
